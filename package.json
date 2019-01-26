@@ -1,0 +1,19 @@
+{
+  "name": "marbel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scss-build": "node-sass-chokidar -w ./main.scss -o ./ --usePolling --polling-interval 1000 --output-style expanded",
+    "test": "test"
+  },
+  "keywords": [
+    "marbel",
+    "scss",
+    "descktop",
+    "mobile",
+    "tablet"
+  ],
+  "author": "AlexBardadym",
+  "license": "ISC",
+  "description": ""
+}

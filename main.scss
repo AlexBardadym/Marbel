@@ -1,0 +1,93 @@
+@font-face{font-family: ArialRoundedMTBold;
+src: url(./fonts/ArialRoundedMTBold.ttf);}
+
+@mixin footertext {font-family: Roboto;
+    color:  #cacaca;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 24px 0 27px 0;
+}
+@mixin footerh {color:  #6c6c6c;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left
+}
+@mixin flexcenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;}
+
+body {margin: 0;width: auto;font-family: Roboto Condensed;}
+
+i{color:#A79472}
+
+#menutablet{display: none;}
+.menutablet{display: none;}
+
+header{background-color:  #e5e5e5;height: 123px;display: flex;flex-direction: row;justify-content: space-between;
+align-items: center;color: #4e4e4e;}
+h1{font-size: 40px;}
+header div:nth-child(1), h4, .container, .container4, .copyright{margin-left: 13.5%;}
+a{text-decoration: none;}
+header .menu a{color: #4e4e4e;font-size: 16px;font-weight: 700;line-height: 35px;margin-left: 25px;}
+header .menu a:hover{color:#1abb9c;}
+header .menu{margin-right: 13.5%;}
+
+
+#imagesect{height: 600px; background:url(./images/Layer1.png);background-size: 100% 600px; text-align: center;line-height: 35px;position: relative;}
+.brand{color:  #f3f3f3;font-size: 40px;font-weight: 700;padding-top: 199px;margin: 0}
+.brand1{margin-top: 43px;margin-bottom:43px;color:  #a8a8a8;font-size: 32px;font-weight: 700;}
+.button{color:  rgb(255, 255, 255);font-size: 14px;margin-top: 6px;font-family: Roboto;}
+#imagesect div{border-radius: 3px;background-color:  #3f8dbf;width: 140px;height: 45px;display: flex;flex-direction: column;align-content: center;}
+#imagesect a{position: absolute;left: 50%;margin-left: -70px}
+#wrapper{height: auto;background: #F4F4F4;}
+h3{color:  #4e4e4e;font-size: 18px;font-weight: 700;line-height: 60px;text-align: center;margin: 0;font-family: Roboto Slab;}
+
+
+.container{@include flexcenter();align-items: center;border-bottom: 2px solid rgba(0, 0, 0, 0.11);width: auto;margin-right: 13.5%;}
+.container p {color:  #616161;font-size: 14px;margin: 0;font-weight: 400;line-height: 24px;font-family: Roboto;}
+
+
+h4{color:  #4e4e4e;font-size: 18px;font-weight: 700;line-height: 35px;text-align: left;margin:60px 0 25px 13.5%px;}
+
+
+.container2{@include flexcenter();
+    align-items:flex-start;margin-left: 13.5%;width: auto;flex-wrap: wrap;justify-content: space-between;margin-right: 13.5%} 
+
+.container2about{color:  #a8a8a8;font-size: 13px;font-weight: 400;margin:0;text-align: left;font-family: RobotoSlab;}
+.container2abouttext{width: 380px; color:  #5c5c5c;font-size: 14px;font-weight: 400;margin-top:23px;line-height:28px;text-align: left;font-family: Roboto;}    
+.container2 div{margin: 0 5px 25px 0}
+.container2 div:last-child{margin-right: 0}
+.container2 h3{color:  #4e4e4e;font-size: 18px;font-weight: 700;margin:0;text-align: left;line-height: 14px;margin: 25px 0 14px 0;}
+
+
+#wrapper .container div{text-align: center;margin: 60px 0 60px 25px;}
+#wrapper .container div:nth-child(1){margin-left: 0}
+
+
+#quote{background-color:  rgba(0, 0, 0, 0.03);height: auto;padding-bottom: 60px;padding-top: 0;}
+.container3{text-align: center}
+.container3symbol{color:  #dcdcdc;font-size: 100px;font-weight: 400;line-height: 35px;
+margin:0 0 50px 0;font-family: ArialRoundedMTBold;}
+.container3text{color:  #a1a1a1;font-size: 20px;font-weight: 400;line-height: 30px;margin: 0;font-family: RobotoSlab;}
+.box{padding: 0 22% 0 22%}
+footer{height: auto;background: #171717;padding-bottom: 50px;padding-top: 50px;width: auto;}
+.container4{border-bottom: 2px solid  rgba(255, 255, 255, 0.11);width: 1170px;margin-right: 13.5%;display: flex;
+flex-direction: row;align-content: space-around;
+justify-content: space-between;align-items: flex-start;width: auto;}
+.container4 div{margin-right: 45px;flex: 1;}
+.container4 div:last-child{margin-right: 0}
+
+
+.footerabout{@include footerh()}
+
+.footertext{@include footertext()}
+.copyright{@include footertext();margin:50px 0 0 13.5%;}
+
+@import "desktop1366.scss";
+@import "tablet768.scss";
+@import "mobile480.scss";

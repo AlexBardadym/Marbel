@@ -1,0 +1,44 @@
+@media screen and (max-width: 768px){
+h4, .container, .container2, .container4, .copyright{margin-left: 6.5%;}
+
+header {justify-content: center;width: auto;}
+header div:nth-child(1){margin: 0;}
+
+.menu {display: none;}
+    
+.hidenmenu{display: none}
+    
+#menutablet{display: block;background: #555555;width: auto;height: 50px;}
+.menutablet{ display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 0 2% 0 2%}
+
+.menutablet a{color: #f3f3f3;font-size: 16px;font-weight: 700;line-height: 35px;}   
+.menutablet a:hover{color:#1abb9c;} 
+h1{margin: 0;}
+
+#imagesect{padding:0 6.5% 5% 6.5%;height: 230px;background-size: 100% 400px;}
+.brand{padding-top: 8%;font-size: 30px}
+.brand1{margin: 2% 0 2% 0;font-size: 25px}
+    
+
+.container{width: auto;flex-wrap: wrap;margin-right: 6.5%}
+.container div:nth-child(2){margin-left: 30px;}
+#wrapper .container div{width: 250px;margin-left: 0;}
+#wrapper h4{text-align: center;margin-left: 0;}
+
+.container2{flex-direction: column;align-items: center; justify-content: center;width: auto;margin:0 6.5% 0 6.5%}
+.container2 div{width: 380px;}
+.container2abouttext{margin-top: 15px;}
+.box{padding: 0;}
+
+.container3{margin: 0;padding: 0 70px 0 70px;}
+
+.container4{flex-direction: column;align-items: center; justify-content: center;margin:0 6.5% 0 6.5%;padding: 0 5% 0 5%}
+.container4 div{margin-right: 0;width: 415px;}
+.copyright{margin-left: 6.5%}
+} 

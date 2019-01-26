@@ -1,0 +1,30 @@
+@media screen and (max-width: 480px){
+header {justify-content: center;height: 100px;}
+#menutablet{position: relative;width: auto;}
+
+.hidenmenu{display:block;position: absolute;right: 15px;top: 15px;}
+.menutablet{width: auto;display: flex;justify-content: space-around;flex-wrap: wrap;padding: 0 2% 0 10%}
+.menutablet a{margin: 1.5%;font-size: 15px;width: 27%;}
+#showmenu{display: none}
+
+.brand1{display: none;}
+.brand{padding-top: 30px;font-size: 20px;}
+#imagesect{position: relative;height: 200px;background-size: 480px 200px;padding: 0 14% 0 14%}
+#imagesect div {margin-top: 20px;}
+
+.container{flex-direction: column;width:auto;margin: 0 5% 0 5%;height: 1200px;}
+#wrapper .container div{margin: 15px 0 10px 0;}
+
+.container2{margin:0 10% 0 10%;width: auto;justify-content: center;align-items: center;flex-wrap: wrap}
+.container2 div{width: 250px;margin-right: 0}
+.container2 p {width: 250px;}
+.container2 img {width: 250px;}
+
+.container3{padding: 0 40px 0 40px;}
+
+.container4{margin: 0 5% 0 5%;padding: 0 10% 0 10%}
+.container4 div{width: auto;}
+.copyright{margin: 10% 5% 10% 5%;}
+footer{padding: 30px 0 1px 0;}
+
+}
